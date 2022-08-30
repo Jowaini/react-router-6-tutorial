@@ -28,17 +28,7 @@ return <button onClick={about} >  about page </button>
 
 
 };
-function hi(){
 
-  return (
-    <BrowserRouter>
-    <Routes>
-  <Route path='/' element={<div>home page</div>}  />
-    </Routes>
-    </BrowserRouter>
-  
-  )
-}
   }
 
 
