@@ -1,35 +1,23 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import Home from './pages/Home';
+import About from './pages/About';
+import Products from './pages/Products';
+import Eror from './pages/Error'
+import Login from './pages/Login';
 function App() {
 
   return (
   <BrowserRouter>
   <Routes>
-<Route path='/' element={<div>home page</div>}  />
-<Route path='about' element={<div>about it </div>}    />
+<Route path='/' element={<Home  />}  />
+<Route path='about' element={ <About />}    />
+ <Route  path='products' element={  <Products  />  }  />
+ <Route path='*' element={<Eror /> } />
+<Route path='Login' element={<Login />} />
   </Routes>
   </BrowserRouter>
 
   );}
-  export const AL =()=>{
-function About () {
-  const about =()=>{
-    return (
-      <BrowserRouter>
-      <Routes>
-
-    <Route path='about' element={<div>about it </div>}    />
-      </Routes>
-      </BrowserRouter>
-    
-      );
-  }
-return <button onClick={about} >  about page </button>
-
-
-};
-
-  }
 
 
 export default App;
